@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Laravolt HTML Template</title>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="x-ua-compatible" content="IE=edge, chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="build/all-51509660ae.css"/>
+</head>
+
+
+<body id="layout-sidebar">
+<div class="full height">
+    <div class="toc">
+        <div class="toc__content">
+            <div class="ui attached vertical menu fluid borderless inverted large">
+                <a href="{{ $item->url() }}" class="item">
+                    Menu 1
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="content__inner">
+
+            <header class="ui menu fixed top small borderless">
+                <div class="brand item"><h3 class="ui header inverted"><img src="img/logo.png" alt="" class="ui image mini">CENTRUM</h3></div>
+                <div class="item"><h3>Application Name</h3></div>
+                <div class="menu right">
+                    <div class="ui item dropdown simple right">
+                        <img src="img/avatar.jpg" alt="" class="ui image avatar">
+                        <i class="icon dropdown"></i>
+                        <div class="menu">
+                            <a href="{{ route('auth::logout') }}" class="item">Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="content__body">
+                <div class="ui container">
+
+                    <div class="ui divider hidden section"></div>
+
+                    <div class="ui segment basic very padded">
+
+                        <h2 class="ui header">
+                            Form
+                        </h2>
+                        <form class="ui form">
+                            <div class="field">
+                                <label>First Name</label>
+                                <input type="text" name="first-name" placeholder="First Name">
+                            </div>
+                            <div class="field">
+                                <label>Last Name</label>
+                                <input type="text" name="last-name" placeholder="Last Name">
+                            </div>
+                            <div class="field">
+                                <div class="ui checkbox">
+                                    <input type="checkbox" tabindex="0" class="hidden">
+                                    <label>I agree to the Terms and Conditions</label>
+                                </div>
+                            </div>
+                            <button class="ui button primary" type="submit">Submit</button>
+                            <a href="" class="ui button">Batal</a>
+                        </form>
+
+                        <h2 class="ui header">
+                            Tabel
+                        </h2>
+                        <table class="ui table">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Status</th>
+                                <th>Notes</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>John</td>
+                                <td>Approved</td>
+                                <td>None</td>
+                            </tr>
+                            <tr>
+                                <td>Jamie</td>
+                                <td>Approved</td>
+                                <td>Requires call</td>
+                            </tr>
+                            <tr>
+                                <td>Jill</td>
+                                <td>Denied</td>
+                                <td>None</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="ui divider section hidden"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="build/all-55ab381f0b.js"></script>
+<script>
+//    Messenger({
+//        extraClasses: 'messenger-fixed messenger-on-top animated messenger-type-error',
+//        theme: 'default'
+//    }).post({"message":"Kami tidak dapat menemukan pengguna dengan alamat surel tersebut.","type":"error","showCloseButton":true,"hideAfter":false});
+//    Messenger({
+//        extraClasses: 'messenger-fixed messenger-on-top animated messenger-type-success',
+//        theme: 'default'
+//    }).post({"message":"Data pengguna berhasil disimpan","type":"success","showCloseButton":true,"hideAfter":false});
+</script>
+</body>
+</html>
